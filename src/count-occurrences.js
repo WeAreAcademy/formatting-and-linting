@@ -9,28 +9,17 @@
  * @param {string} n - string to count occurrences off
  * @returns {number} how many occurrences of the string are in the array
  */
-function x
-(
-y,
-n
-)
-
-
-                        {
-        let x2=(
-(
-(
-  (
-(0)
-)))
-                )
-        for (
-  
-            let mars of (
-        ((
-                y)))){if(((((n=mars))))){x2++}}return(((((x2)))))}
-
+function x(arrOfStr,strOccurrence) {
+var counter = 0;
+        for (let x of arrOfStr){
+                if(x === strOccurrence){
+                        counter = counter + 1;
+                }
+        }return(counter)
+}
 console.log(x(["na", "na", "na", "na", "BATMAN"], "na"), 4);
 console.log(x(["na", "na", "na", "na", "BATMAN"], "BATMAN"), 1);
 console.log(x(["na", "na", "na", "na", "BATMAN"], "batman"), 0);
 console.log(x(["na", "na", "na", "na", "BATMAN"], "a"), 0);
+console.log(x(["na", "na", "na", "123", "BATMAN"], "123"), 1);
+console.log(x(["na", "na", "na", "123", "BATMAN"], "123"), 1);
