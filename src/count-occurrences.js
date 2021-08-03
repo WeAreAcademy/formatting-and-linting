@@ -22,3 +22,4 @@ console.log(x(["na", "na", "na", "na", "BATMAN"], "BATMAN"), 1);
 console.log(x(["na", "na", "na", "na", "BATMAN"], "batman"), 0);
 console.log(x(["na", "na", "na", "na", "BATMAN"], "a"), 0);
 console.log(x(["na", "na", "na", "123", "BATMAN"], "123"), 1);
+console.log(x(["na", "na", "na", "123", "BATMAN"], "123"), 1);
