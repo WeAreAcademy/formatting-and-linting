@@ -9,14 +9,14 @@
  * @param {string} n - string to count occurrences off
  * @returns {number} how many occurrences of the string are in the array
  */
-function x(y, n) {
-  let x2 = 0;
-  for (let mars of y) {
-    if ((n === mars)) {
-      x2++;
+function wordOccurrence(wordList, targetStr) {
+  let COUNT = 0;
+  for (let word of wordList) {
+    if ((targetStr === word)) {
+      COUNT++;
     }
   }
-  return x2;
+  return COUNT;
 }
 
 console.log(x(["na", "na", "na", "na", "BATMAN"], "na"), 4);
