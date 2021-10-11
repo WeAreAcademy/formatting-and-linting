@@ -4,11 +4,12 @@
  * Count how many whole occurrences of a string there are in an array.
  * Partial matches are not counted.
  * The count should be case sensitive.
- * 
+ *
  * @param {string[]} y - array of strings to check
  * @param {string} n - string to count occurrences off
  * @returns {number} how many occurrences of the string are in the array
  */
+<<<<<<< HEAD
 function x(y, n) {
         let x2=0;
         for (let mars of y){
@@ -17,6 +18,16 @@ function x(y, n) {
                 }
         }
         return x2;
+=======
+function wordOccurrence(wordList, targetStr) {
+  let COUNT = 0;
+  for (let word of wordList) {
+    if ((targetStr === word)) {
+      COUNT++;
+    }
+  }
+  return COUNT;
+>>>>>>> bugfix-walkthrough
 }
 
 console.log(x(["na", "na", "na", "na", "BATMAN"], "na"), 4);
