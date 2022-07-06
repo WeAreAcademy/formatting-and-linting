@@ -9,16 +9,16 @@
  * @param {string} n - string to count occurrences off
  * @returns {number} how many occurrences of the string are in the array
  */
-function x(y, n) {
-  let x2 = 0;
+function x(stringArray, stringToCount) {
+  let occurrences = 0;
 
-  for (let mars of y) {
-    if (n === mars) {
-      x2++;
+  for (let word of string) {
+    if (word === stringToCount) {
+      occurrences++;
     }
   }
 
-  return x2;
+  return occurrences;
 }
 
 console.log(x(["na", "na", "na", "na", "BATMAN"], "na"), 4);
